@@ -35,8 +35,3 @@ let timer = setInterval(function() {
 </div>";
 
 }, 1000);
-
-function regSuccess() {
-    alert("Successfully Registered");
-    window.location.href = "./index.html";
-}
