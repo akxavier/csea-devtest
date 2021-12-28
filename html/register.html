@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Code.Init()</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../app.js"></script>
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar">
+		<ul class="link-grp">
+			<li class="link"><a href="../index.html">Home</a></li>
+			<li class="link"><a href="contact.html">Contact Us</a></li>
+			<li class="link active"><a href="#">Register</a></li>
+		</ul>
+	</nav>
+
+    <!--register page-->
+    <form>  
+        <div class="container">  
+            <h1 class="heading">Registration Form</h1>
+            <hr>  
+            <label>
+                <b>
+                    Name
+                </b>
+            </label>   
+            <input type="text" name="name" placeholder= "Name" size="15" required />     
+            
+            <label>
+                <b>
+                    DOB : 
+                </b>
+            </label>
+            <input type="date" name="birthday" required><br>
+
+            <label>
+                <b>
+                    Roll no
+                </b>
+            </label>   
+            <input type="text" name="rollno" placeholder= "Roll No" size="15" required />
+
+            <div>  
+                <label>
+                    <b>
+                        Branch :
+                    </b> 
+                </label>   
+                <select class="dropdown">  
+                    <option value="Computer Science and Engineering">Computer Science and Engineering</option>  
+                    <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>  
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>  
+                    <option value="Civil Engineering">Civil Engineering</option>  
+                    <option value="Production Engineering">Production Engineering</option>  
+                    <option value="Chemical Engineering">Chemical Engineering</option>  
+                </select>  
+            </div>
+            
+            <label>   
+                <b>Country Code</b> 
+            </label>  
+            <input type="text" name="country code" placeholder="Country Code" pattern="+[0-9]{2}" value="+91" size="2"/> 
+            
+            <label>   
+                <b>Mobile no</b> 
+            </label>
+            <input type="text" name="phone" placeholder="Phone no." size="10" pattern="[0-9]{10}" required>
+
+            <label for="email">
+                <b>
+                    Email
+                </b>
+            </label>  
+            <input type="text" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>  
+            
+            <div class="radio">  
+                <label>   
+                    <b>
+                        Gender : 
+                    </b> 
+                </label><br> 
+                <br>
+                <input type="radio" value="Male" name="gender" checked > Male   
+                <input type="radio" value="Female" name="gender"> Female   
+                <input type="radio" value="Prefer not to say" name="gender"> Prefer not to say  
+                
+            </div>
+              
+            <button type="submit" class="registerbtn" onclick="location.href='./redirect.html'">Register</button>   
+        </div> 
+    </form>
+</body>
+</html>
